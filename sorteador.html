@@ -7,19 +7,30 @@
     <title>Sorteador de Personagem, Arma e Equipamentos</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Sorteador de Personagem, Arma e Equipamentos</h1>
+<div class="container">
+    <h1>Sorteador de Personagem, Arma e Equipamentos</h1>
 
-        <button onclick="sortearPersonagem()">Sortear Personagem</button>
-        <button id="sortearArmaBtn" onclick="sortearArma()" disabled>Sortear Arma</button>
-        <button id="sortearEquipamentosBtn" onclick="sortearEquipamentos()" disabled>Sortear Equipamentos</button>
+    <button onclick="sortearPersonagem()">Sortear Personagem</button>
+    <button id="sortearArmaBtn" onclick="sortearArma()" disabled>Sortear Arma</button>
+    <button id="sortearEquipamentosBtn" onclick="sortearEquipamentos()" disabled>Sortear Equipamentos</button>
 
-        <h2>Resultado:</h2>
-        <p id="resultado"></p>
+    <h2>Resultado:</h2>
+    <p id="resultado"></p>
 
-        <button onclick="limparTela()" class="new-button">Novo</button>
+    <div id="imagemContainer">
+        <div>
+            <img id="imagemPersonagem" src="" alt="Personagem" width="200" height="150">
+        </div>
+        <div>
+            <img id="imagemArma" src="" alt="Arma" width="200" height="150">
+        </div>
+        <img id="imagemEquipamentos" src="" alt="Equipamentos" width="200" height="150">
     </div>
 
-    <script src="script.js"></script>
+
+    <button onclick="limparTela()" class="new-button">Novo</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

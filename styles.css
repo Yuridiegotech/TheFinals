@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     margin: 0;
@@ -40,4 +40,14 @@ h2 {
 
 .new-button {
     margin-top: 20px;
+}
+
+/* Adicionado para ocultar as imagens inicialmente */
+#imagemContainer img {
+    display: none;
+}
+
+#imagemContainer div {
+    display: block;
+    margin-bottom: 10px; /* Adicione margem inferior para separar as imagens verticalmente */
 }
